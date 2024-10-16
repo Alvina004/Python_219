@@ -1,5 +1,5 @@
 
-def parse_expression(expression):
+def parse_exp(expression):
     tokens = [] 
     num = ""   
     for char in expression:
@@ -20,7 +20,7 @@ def parse_expression(expression):
 
     return tokens
 
-def simple_calculator(tokens):
+def calculator(tokens):
     i = 0
     while i < len(tokens):
         if tokens[i] == '*' or tokens[i] == '/':
@@ -47,7 +47,7 @@ def simple_calculator(tokens):
 
     return tokens[0]
 
-expression = input("Enter a mathematical expression (e.g., 12 + 3.14 - 4 * 5 / 2): ")
-tokens = parse_expression(expression)
-result = simple_calculator(tokens)
+expression = input("Enter a mathematical expression (for example: 12+896-742/58*365): ")
+tokens = parse_exp(expression)
+result = calculator(tokens)
 print("Result:", result)  
