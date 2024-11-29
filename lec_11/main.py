@@ -51,7 +51,7 @@ def deletePost(post_id):
 if __name__ == "__main__":
 
     print(" Filtered posts: ")
-    filtered_posts = get_filtered_posts()
+    filtered_posts = filteredPosts()
     for post in filteredPosts:
         print(post)
 
@@ -71,4 +71,3 @@ if __name__ == "__main__":
         delete_message = deletePost(created_post["id"])
         if delete_message:
             print(delete_message)
-
