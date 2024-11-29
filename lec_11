@@ -1,0 +1,4 @@
+echo "# main.py" > lec_11/main.py
+git add lec_11/
+git commit -m "Added lec_11 with main.py"
+git push
